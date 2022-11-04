@@ -1,0 +1,10 @@
+<br><p id="branchHead">Alberta</p>
+                        <p>1212 Riley Hughes Way,<br>
+                        Red Deer, AB, G5P Y3Z,<br>Canada.</p>
+                        <p><i class="fa-sharp fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+1 (542) 787 1001<br>
+                        <i class="fa-solid fa-envelope"></i><i class="fa-solid fa-at"></i>&nbsp;&nbsp;&nbsp;info@gcbank-ab.ca</p>
+                        <br><p id="branchHead">New Brunswick</p>
+                        <p>922 Wayne Chase Boulevard,<br>
+                        Fredericton, NB, Z9H I3J,<br>Canada.</p>
+                        <p><i class="fa-sharp fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+1 (342) 707 1001<br>
+                        <i class="fa-solid fa-envelope"></i><i class="fa-solid fa-at"></i>&nbsp;&nbsp;&nbsp;info@gcbank-nb.ca</p>

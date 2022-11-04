@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Choice Bank - Home</title>
+    <!-- CSS links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Lato|Quicksand|Montserrat|Questrial">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>    
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>    
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://kit.fontawesome.com/3278087be3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <!-- <script type="text/babel" src="react.js"></script> -->
+
+    <!-- Bootstrap script links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" 
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <!-- AngularJS script link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ReactJS script link -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+    <script src="app.js"></script>
+</head>
+<body>
+    <!-- home section begins here -->
+    <section id="home">
+        <nav class="navbar navbar-expand-sm bg-light justify-content-center fixed-top">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#accounts">Accounts</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container" id="homeContent">
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+                
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="magnificient.jpg" alt="Los Angeles">
+                    <div class="carousel-caption">
+                    <h3>Los Angeles</h3>
+                    <p>We had such a great time in LA!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="earthly_wonder.jpg" alt="Chicago" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                    <h3>Chicago</h3>
+                    <p>Thank you, Chicago!</p>
+                    </div> 
+                </div>
+                <div class="carousel-item">
+                    <img src="lone_ranger.jpg" alt="New York" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                    <h3>New York</h3>
+                    <p>We love the Big Apple!</p>
+                </div>  
+            </div>
+        </div>
+    
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+  
+        </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- accounts section begins here -->
+    <section id="accounts">
+        <div class="container">
+            <h2 class="accountsHeading" style="text-align: center;">My Accounts</h2>
+            <hr>
+            <div class="row acctSummary">
+                <div class="col accountSummary"></div>
+            </div>
+
+            <!-- account type selection buttons -->
+            <div class="row acctBtn">
+                <div class="col-md-4 col-sm-10 chequing d-grid">
+                    <button id="chequingBtn" class="btn btn-block btn-sm" onclick="changeToChequing()">Chequing Account</button>
+                </div>
+                <div class="col-md-4 col-sm-10 savings d-grid">
+                    <button id="savingsBtn" class="btn btn-block btn-sm" onclick="changeToSavings()">Savings Account</button>
+                </div>
+                <div class="col-md-4 col-sm-10 creditcards d-grid">
+                    <button id="creditcardsBtn" class="btn btn-block btn-sm" onclick="changeToCreditCards()">Credit Card</button>
+                </div>
+            </div>
+            <div id="typeOfAccount">
+                <div class="text-center" id="accountType">{{acctTypeTransactLabel}}</div>
+            </div>
+            <div class="row acctHistoryDisplay justify-content-center" id="transactionsH">
+                
+            </div>
+        </div>        
+    </section>
+    <!-- accounts section ends here -->
+
+    <!-- services section begins here -->
+    <section id="services">
+        <div class="container">
+            <h2 class="servicesHeading" style="text-align: center;">Products and Services</h2>
+            <hr>
+            <div class="row">
+                <div class="col" id="serviceCards">
+                    <h4 class="serviceHeading">Banking</h4>
+                    <hr>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Bank Accounts</button></a>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Ways to Bank</button></a>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Overdraft</button></a>
+                </div>
+                <div class="col" id="serviceCards">
+                    <h4 class="serviceHeading">Borrowing</h4>
+                    <hr>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Mortgage</button></a>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Loans</button></a>
+                </div>
+                <div class="col" id="serviceCards">
+                    <h4 class="serviceHeading">Credit Cards</h4>
+                    <hr>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Flexible Travel Rewards</button></a>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Cash Back Dollars</button></a>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">No annual fee</button></a>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Low interest rate</button></a>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">US Dollar Visa</button></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" id="serviceCards">
+                    <h4 class="serviceHeading">Travels</h4>
+                    <hr>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Cross Border Banking</button></a>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Travel Medical Insurance</button></a>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Foreign Earnings</button></a>
+                </div>
+                <div class="col" id="serviceCards">
+                    <h4 class="serviceHeading">Investments</h4>
+                    <hr>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Savings and Investment Products</button></a>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Invest on your own</button></a>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Invest with an Advisor</button></a>
+                </div>
+                <div class="col" id="serviceCards">
+                    <h4 class="serviceHeading">Insurance</h4>
+                    <hr>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Mortgage Protection</button></a>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Line of Credit Protection</button></a>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Loan Protection</button></a>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Credit Card Payment Protection Plan</button></a>
+                    <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Business Credit Protection</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services section ends here -->
+
+    <!-- about section begins here -->
+    <section id="about">
+        <div class="container">
+            <h2 class="aboutHeading" style="text-align: center;">About us</h2>
+            <hr>
+            <div class="briefHistory">
+                <h2 id="historyInBrief">Historical Background</h2>
+                <div class="col-md-12 col-sm-10" id="historyContent">
+                    <p>The bank is built on the foundation of more than 1,200 predecessor institutions that have come together through the years to form today's GCBank.</p>
+                    <p>We trace our roots to 1799 in New York City, and our many well-known heritage firms include J.P. Morgan & Co., The Chase Manhattan Bank, Bank One, Manufacturers Hanover Trust Co., Chemical Bank, The First National Bank of Chicago, National Bank of Detroit, The Bear Stearns Companies Inc., Robert Fleming Holdings, Cazenove Group and the business acquired in the Washington Mutual transaction. Each of these firms, in its time, was closely tied to innovations in finance and the growth of the U.S. and global economies.</p>
+                </div>
+            </div>
+            <div class="milestones">
+                <h2 id="bankAchievements">Our Milestones</h2>
+                <div class="row">
+                    <div class="col-md-6 col-sm-10" id="milestonesLeft">
+
+                    </div>
+                    <div class="col-md-6 col-sm-10" id="milestonesRight">
+
+                    </div>
+                </div>
+            </div>
+            <div class="management">
+                <div class="row">
+                    <div class="col-md-6 col-sm-10" id="directors">
+                        <h2 id="board">Directors</h2>
+                    </div>
+                    <div class="col-md-6 col-sm-10" id="management">
+                        <h2 id="management">Management Team</h2>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+    <!-- about section ends here -->
+
+    <!-- contact section begins here -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="contactHeading" style="text-align: center;">Contact us</h2>
+            <hr>
+            <br>
+            <div class="row justify-content-center" id="contactSubSections">
+                <div class="col-4" id="socialMedia">
+                    <h2 class="text-center" id="locations">Bank Locations</h2><br>
+                    <div class="row headOffice text-left">
+                        <h5 id="mainTitle">Head Office - Toronto</h5>
+                        <p>1001 Paul Bassinger Avenue,<br>
+                        Creek Line, ON, G5H Y3Z,<br>Canada.</p>
+                        <p><i class="fa-sharp fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+1 (413) 767 1001<br>
+                        <i class="fa-solid fa-envelope"></i><i class="fa-solid fa-at"></i>&nbsp;&nbsp;&nbsp;info@gcbank.ca</p><br>
+                        <button class="btn btn-sm" id="showLocations">show more</button>
+                    </div>
+                    <div class="row text-left" id="otherOffices">                    
+                        <br><h5 id="branchHead">Alberta</h5>
+                        <p>1212 Riley Hughes Way,<br>
+                        Red Deer, AB, G5P Y3Z,<br>Canada.</p>
+                        <p><i class="fa-sharp fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+1 (542) 787 1001<br>
+                        <i class="fa-solid fa-envelope"></i><i class="fa-solid fa-at"></i>&nbsp;&nbsp;&nbsp;info@gcbank-ab.ca</p>
+                        <br><h5 id="branchHead">New Brunswick</h5>
+                        <p>922 Wayne Chase Boulevard,<br>
+                        Fredericton, NB, Z9H I3J,<br>Canada.</p>
+                        <p><i class="fa-sharp fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+1 (342) 707 1001<br>
+                        <i class="fa-solid fa-envelope"></i><i class="fa-solid fa-at"></i>&nbsp;&nbsp;&nbsp;info@gcbank-nb.ca</p>                    
+                    </div>
+                    <div class="row socialMedia text-center">
+                        <button class="btn btn-outline" id="facebookBtn"><i class="fa-brands fa-facebook-f"></i></button>
+                        <button class="btn btn-outline" id="twitterBtn"><i class="fa-brands fa-twitter"></i></button>
+                        <button class="btn btn-outline" id="instagramBtn"><i class="fa-brands fa-instagram"></i></button>
+                        <button class="btn btn-outline" id="youtubeBtn"><i class="fa-brands fa-youtube"></i></button>
+                        <button class="btn btn-outline" id="linkedInBtn"><i class="fa-brands fa-linkedin"></i></button>
+                    </div>
+                </div>
+                <div class="col-4 text-center" id="setAppointment">
+                    <h2 id="appointment">Book an appointment</h2><br>
+                    <h4 id="typeOfAppmntQ">What type of appointment will this be?</h4><hr id="typeOfAppointmentLine">
+                    <button class="btn btn-outline" id="personalBtn"><i class="fa-solid fa-user"></i><br>Personal</button>
+                    <button class="btn btn-outline" id="businessBtn"><i class="fa-solid fa-briefcase"></i><br>Business</button>
+                    <div id="personalListBtns">
+                        <h4 id="typeOfAppmntQ">I want to talk about</h4><hr id="topicOfTalk">
+                        <div class="row justify-content-center" id="pListBtnsRow1">
+                            <button class="btn btn-outline" id="bankingBtn"><i class="fa-solid fa-building-columns"></i><br>Banking</button>
+                            <button class="btn btn-outline" id="investingBtn"><i class="fa-solid fa-money-check-dollar"></i><br>Investing</button>
+                            <button class="btn btn-outline" id="homeFinancingBtn"><i class="fa-sharp fa-solid fa-house"></i><br>Home Financing</button>
+                        </div>
+                        <div class="row justify-content-center" id="pListBtnsRow2">
+                            <button class="btn btn-outline" id="borrowingBtn"><i class="fa-sharp fa-solid fa-sack-dollar"></i><br>Borrowing</button>
+                            <button class="btn btn-outline" id="creditcardBtn"><i class="fa-regular fa-credit-card"></i><br>Credit Cards</button>
+                            <button class="btn btn-outline" id="hideoutBtn">Business</button>
+                        </div>
+                    </div>
+                    <div id="subAppmntTypeListBtns">
+                        <h4 id="typeOfAppmntQ">Select an investing topic</h4><hr id="bankingTopicLine">
+                        <div class="row text-center" id="pListBtnsRow1">
+                            <div class="col retirement">
+                                <button class="btn btn-block btn-sm mt-3" id="retirement">Plan for my retirement</button>
+                            </div>
+                            <div class="col startsaving">
+                                <button class="btn btn-block btn-sm mt-3" id="startsaving">Start saving</button>
+                            </div>                            
+                        </div>
+                        <div class="row text-center" id="pListBtnsRow2">
+                            <div class="col childeduc">
+                                <button class="btn btn-block btn-sm mb-3" id="childeduc">Plan for my child's education</button>
+                            </div>
+                            <div class="col mutualfunds">
+                                <button class="btn btn-block btn-sm mb-3" id="mutualfunds">Learn about mutual funds</button>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="row text-center" id="appointmentStep4">
+                        <h4 id="typeOfAppmntQ">Are you an existing GCBank customer?</h4><hr id="existingCustomerLine">                    
+                        <div class="col existingCustomerYes">
+                            <button class="btn btn-block btn-sm mt-3" id="existingCustomerYes">Yes</button>
+                        </div>
+                        <div class="col existingCustomerNo">
+                            <button class="btn btn-block btn-sm mt-3" id="existingCustomerNo">No</button>
+                        </div> 
+                        <br>
+                        <div class="col-12 Continue d-grid">
+                            <button class="btn btn-block btn-sm mb-3" id="continue">Continue</button>
+                        </div>
+                        <!-- <button class="btn btn-outline" id="bankingBtn">Banking</button>
+                        <button class="btn btn-outline" id="investingBtn">Investing</button> -->
+                    </div>
+                </div>
+                <div class="col-4 " id="messageToUs">
+                        <h2 class="text-center" id="dropNote">Drop a message</h2><br>
+                        <form class="container needs-validation" novalidate>
+                            <div class="form-row">
+                                <label id="dropmsg_name_lbl">Name</label>
+                                <div class="col-md-12 mb-3">
+                                    <input class="form-control" id="name" type="text" placeholder="Name" >
+                                </div>
+                                <label id="dropmsg_email_lbl">Email</label>
+                                <div class="col-md-12 mb-3">
+                                    <input class="form-control" id="email" type="email" placeholder="Email" >
+                                </div>
+                                <label id="dropmsg_subject_lbl">Subject</label>
+                                <div class="col-md-12 mb-3">
+                                    <input class="form-control" id="subject" type="text" placeholder="Subject" >
+                                </div>
+                                <label id="dropmsg_message_lbl">Message</label>
+                                <div class="col-md-12 mb-3">
+                                    <textarea class="form-control" id="message" type="text" placeholder="Your message here . . ." rows="8"></textarea>
+                                </div>
+                                <div class="col-md-12 text center">
+                                    <button class="form-control btn btn-outline-secondary my-3" id="sendBtn" type="submit">S e n d</button>
+                                </div>
+                            </div>
+                        </form>
+                </div>
+            </div>
+            
+        </div>        
+    </section>
+    <!-- contact section ends here -->
+
+</body>
+</html>
+
+<!-- <sectiion id="contact">
+    <div class="container py-2" style="height: 100vh;">
+        <h2 class="my-3 text-primary">
+            Contact us <i class="fa fa-envelope ml-2"></i>
+        </h2>
+        <hr>
+        <h3 class="text-center text-dark">
+
+        </h3>
+        <p class="text-center text-secondary">
+
+        </p>
+           social media and linkedIn links -->
+        <!-- <div class="row mt-5">
+            <div class="col-md-4">
+                <h3 class="my-3 text-muted text-dark">
+                    Our Location
+                </h3>
+                <p class="text-muted">
+                    455 George Livingstone Boulevard <br>
+                    Georgetown, ON, N2G 5Y7<br>
+                    Canada.
+                </p>
+                <p class="text-muted">
+                    <i class="fa-sharp fa-solid fa-phone"></i> &nbsp;&nbsp;  +1 (604) 822 9214
+                </p>
+                <p class="text-muted">
+                    <i class="fa-solid fa-envelope-circle-check"></i> &nbsp;&nbsp;  greatcarehospital@health.org
+                </p>
+            </div>
+            
+                <p class="text-center lead py-5 mb-6 fixed-bottom">
+                    We are always pleased to hear from you.
+                </p>
+        </div>
+    </div>
+</sectiion> -->

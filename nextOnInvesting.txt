@@ -1,0 +1,17 @@
+<h4 id="typeOfAppmntQ">Select an investing topic</h4><hr id="bankingTopicLine">
+                        <div class="row text-center" id="pListBtnsRow1">
+                            <div class="col retirement">
+                                <button class="btn btn-block btn-sm mt-3" id="retirement">Plan for my retirement</button>
+                            </div>
+                            <div class="col startsaving">
+                                <button class="btn btn-block btn-sm mt-3" id="startsaving">Start saving</button>
+                            </div>                            
+                        </div>
+                        <div class="row text-center" id="pListBtnsRow2">
+                            <div class="col childeduc">
+                                <button class="btn btn-block btn-sm mb-3" id="childeduc">Plan for my child's education</button>
+                            </div>
+                            <div class="col mutualfunds">
+                                <button class="btn btn-block btn-sm mb-3" id="mutualfunds">Learn about mutual funds</button>
+                            </div>                            
+                        </div>

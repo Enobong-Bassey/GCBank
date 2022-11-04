@@ -1,0 +1,564 @@
+nav {
+    background-color: #f1f3fb;
+    opacity: 50%;
+    max-height: 8vh;
+    border-bottom: 4px solid black;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+    font-size: small;
+    margin: 20px;
+    /* color: black; */
+    opacity: 100%;
+}
+
+nav ul li a {
+    color: black;
+}
+
+nav ul li a:hover {
+    font-weight: 600;
+    color: black;
+}
+
+#creditcardsBtn, #savingsBtn, #chequingBtn {
+    background-color: #5867e8;
+    border-radius: 0;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    font-size: small;
+}
+
+#creditcardsBtn:hover, #savingsBtn:hover, #chequingBtn:hover {
+    background-color: #730394;
+    border-radius: 0;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    font-size: small;
+}
+
+.col.chequing, .col.savings, .col.creditcards {
+    border-radius: 0;
+    background-color: #b5caee;
+    box-shadow: none;
+    max-height: 5vh;
+    min-height: 5vh;
+    margin: 2px;
+    padding: 0;
+}
+
+#serviceCards {
+    box-shadow: 2px 2px 4px #777;
+    /* border: 0.5px solid rgb(116, 75, 34); */
+    background-color: #ccffcc;
+    border-radius: 22px;
+    min-height: 32vh;
+    margin: 30px;
+    padding: 15px;
+}
+
+#home {
+    background-color: #dddbda;
+    min-height: 100vh;
+}
+
+#accounts {
+    background-color: #b5caee;
+    min-height: 100vh;
+}
+
+#services {
+    background-color: #cdefc4;
+    min-height: 100vh;
+}
+
+#about {
+    background-color: #f8e3b7;
+    min-height: 100vh;
+}
+
+#contact {
+    background-color: #d7bff5;
+    min-height: 100vh;
+}
+
+hr {
+    font-weight: 500;
+}
+
+#homeContent {
+  padding-top: 10vh;
+}
+
+.accountsHeading {
+    padding-top: 10vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #3a49da;
+}
+
+.servicesHeading {
+    padding-top: 10vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #008000;
+}
+
+.aboutHeading {
+    padding-top: 10vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #643a1b;
+}
+
+.contactHeading {
+    padding-top: 10vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #3e1d60;
+}
+
+a {
+    text-decoration: none;
+}
+
+.serviceHeading {
+    font-family: 'Questrial', sans-serif;
+    font-size:large;
+    color: green;
+    text-shadow: 0.5px 1px 1px #777;
+}
+
+a button.btn.btn-outline-success.btn-sm.btn-block {
+    font-family: 'Questrial', sans-serif;
+    /* font-weight: 400; */
+    font-size: 14px;
+    margin: 1px;
+    font-weight: 600;
+    border: none;
+}
+
+.col.accountsSummary {
+    border-radius: 0;
+    background-color: #b5caee;
+    min-height: 30vh;
+}
+
+.col-6.creditSection, .col-6.debitSection {
+    /* border-radius: 15px; */
+    padding: 0;
+    background-color: #b5caee;
+    box-shadow: 0.5px 1px 1px #777;
+    border: 0.3px solid #777;
+    margin-bottom: 25px;
+    max-height: 400px;
+}
+
+/* .col-6.creditSection {
+    margin: 5px 10px 5px 0px;
+}
+
+.col-6.debitSection {
+    margin: 5px 0px 5px 10px;
+} */
+
+#typeOfAccount {
+    min-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: darkblue;
+    font-size: small;
+    font-weight: bolder;
+    padding-top: 3px;
+    padding-bottom: 0;
+}
+
+#accountType {
+    min-height: 30px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: darkblue;
+    font-weight: bolder;
+    font-family: 'Questrial', sans-serif;
+    font-size: 24px;
+}
+
+.typeOfAccountLine {
+    font-weight: 600;
+    color: #3a49da;
+    margin-top: 0;
+    border: 2px solid #3a49da;
+    background-color: #3a49da;
+}
+
+
+.creditHead,
+.debitHead {
+    min-height: 6px;
+    background-color: 0;
+    padding: 5px 20px;
+    margin: 0;
+    display: block;
+}
+
+.creditHead #creditHeadTitle,
+.debitHead #debitHeadTitle {
+    font-family: 'Questrial', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: darkblue;
+    padding-top: 12px;
+}
+
+.creditHead #creditSearchChequing,
+.debitHead #debitSearchChequing {
+    font-family: 'Questrial', sans-serif;
+    font-size: 12px;
+    color: #777;
+    float: right;
+}
+
+body section .container .row.acctHistoryDisplay #creditBody,
+body section .container .row.acctHistoryDisplay #debitBody {
+    /* padding: 20px; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 20px;
+}
+
+div .col-6.creditSection .table-responsive, 
+div .col-6.debitSection .table-responsive {
+    margin: 20px;
+    max-height: 200px;
+}
+
+div .col-5.creditSection .table-responsive .table, 
+div .col-5.debitSection .table-responsive .table {
+    /* background-color: white;        */
+}
+
+/* code for fixed table head and scrollable body */
+.table.table-striped {
+    overflow-y: auto;
+    height: 200px;
+  }
+  
+  .table.table-striped table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .table.table-striped th,
+  .table.table-striped td {
+    padding: 8px 16px;
+  }
+  
+  .table.table-striped th {
+    position: sticky;
+    top: 0;
+    background: #5867e8;
+    color: white;
+  }
+
+  #dropNote, #locations,
+  #appointment {
+    color: #3e1d60;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  #historyInBrief, #bankAchievements,
+  #board, #management {
+    color: #643a1b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  #historyContent, #bankAchievements,
+  #board, #management {
+    min-height: 15vh;
+  }
+
+  #board {
+    margin-right: 0;
+  }
+
+  #management {
+    margin-left: 0;
+  }
+
+  #dropmsg_name_lbl,
+  #dropmsg_email_lbl,
+  #dropmsg_subject_lbl,
+  #dropmsg_message_lbl {
+    color: #3e1d60;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    min-height: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  div#dropmsg_name_lbl,
+  div#dropmsg_email_lbl,
+  div#dropmsg_subject_lbl,
+  div#dropmsg_message_lbl {
+    height: 20px;
+  }
+
+  #sendBtn {
+    border: 1px solid #3e1d60;
+  }
+
+  div .col-md-4 {
+    display: inline-block;
+  }
+
+  #personalBtn,
+  #businessBtn {
+    width: 80px;
+    height: 80px;
+    margin: 10px 20px;
+    border: 1px solid #3e1d60;
+    font-family: 'Questrial', sans-serif;
+    font-size: small;
+    font-weight: 600;
+  }
+
+  #bankingBtn, #investingBtn, #homeFinancingBtn,
+  #borrowingBtn, #creditcardBtn {
+    font-family: 'Questrial', sans-serif;
+    font-size: small;
+    border: 1px solid #3e1d60;
+    width: 80px;
+    height: 80px;
+    margin: 10px 20px;
+    font-weight: 600;
+  }
+
+  #facebookBtn, #twitterBtn, #instagramBtn,
+  #youtubeBtn, #linkedInBtn {
+    font-family: 'Questrial', sans-serif;
+    font-size: small;
+    border: 1px solid #3e1d60;
+    width: 45px;
+    height: 45px;
+    margin: 5px 10px;
+    font-weight: 600;
+  }
+
+  #openChequing, #openSavings,
+  #openUSdollar, #applyOverdraftP,
+  #existingCustomerYes, #existingCustomerNo, 
+  #continue, #showLocations,
+  #retirement, #childeduc,
+  #startsaving, #mutualfunds {
+    font-family: 'Questrial', sans-serif;
+    font-size: small;
+    border: 1px solid #3e1d60;
+    margin: 5px 10px;
+    font-weight: 600;
+  }
+
+  div #hideoutBtn {
+    visibility: hidden;
+  }
+
+  #personalBtn:hover,
+  #businessBtn:hover,
+  #sendBtn:hover {
+    background-color: #3e1d60;
+    color: white;
+    font-weight: 500;
+  }
+
+  #bankingBtn:hover, #investingBtn:hover, #homeFinancingBtn:hover,
+  #borrowingBtn:hover, #creditcardBtn:hover {
+    background-color: #3e1d60;
+    color: white;
+    font-weight: 500;
+  }
+
+  #openChequing:hover, #openSavings:hover,
+  #openUSdollar:hover, #applyOverdraftP:hover,
+  #continue:hover, #showLocations:hover,
+  #facebookBtn:hover, #twitterBtn:hover, #instagramBtn:hover,
+  #youtubeBtn:hover, #linkedInBtn:hover,
+  #retirement:hover, #childeduc:hover,
+  #startsaving:hover, #mutualfunds:hover {
+    background-color: #3e1d60;
+    color: white;
+    font-weight: 500;
+  }
+
+  #openChequing:active, #openSavings:active,
+  #openUSdollar:active, #applyOverdraftP:active,
+  #continue:active, #showLocations:active,
+  #facebookBtn:active, #twitterBtn:active, #instagramBtn:active,
+  #youtubeBtn:active, #linkedInBtn:active,
+  #retirement:active, #childeduc:active,
+  #startsaving:active, #mutualfunds:active {
+    background-color: #3e1d60;
+    color: white;
+    font-weight: 500;
+  }
+
+  #existingCustomerYes:hover {
+    background-color: green;
+    color: white;
+    font-weight: 500;
+  }
+
+  #existingCustomerNo:hover {
+    background-color: red;
+    color: white;
+    font-weight: 500;
+  }
+
+  .step3 {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+
+  .step3 #openChequing, .step3 #openSavings {
+    display: inline-block;
+  }
+
+  #typeOfAppmntQ {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .row .col-6 {
+    display: inline-block;
+  }
+
+  #socialMedia,
+  #setAppointment,
+  #messageToUs {
+    /* border: 2px solid #3e1d60; */
+    min-height: 100px;
+    padding: 5px 4px;
+  }
+
+  .row #socialMedia,
+  .row #setAppointment,
+  .row #messageToUs {
+    /* display: inline-block; */
+  }
+
+  div.col.openChequing, div.col.openSavings,
+  div.col.openUSdollar, div.col.applyOverdraftP,
+  div.col.startsaving, div.col.mutualfunds,
+  div.col.retirement, div.col.childeduc,
+  div.col.existingCustomerYes, div.col.existingCustomerNo {
+    border-radius: 0;
+    background-color: #d7bff5;
+    box-shadow: none;
+    margin: 2px;
+    padding: 0;
+}
+
+button#openChequing.btn.btn-block.btn-sm,
+button#openSavings.btn.btn-block.btn-sm,
+button#openUSdollar.btn.btn-block.btn-sm,
+button#applyOverdraftP.btn.btn-block.btn-sm,
+button#startsaving.btn.btn-block.btn-sm,
+button#retirement.btn.btn-block.btn-sm,
+button#childeduc.btn.btn-block.btn-sm,
+button#mutualfunds.btn.btn-block.btn-sm,
+button#existingCustomerYes.btn.btn-block.btn-sm,
+button#existingCustomerNo.btn.btn-block.btn-sm {
+  margin: 1px;
+  border-radius: 0;
+  padding: auto;
+  width: 215px;
+}
+
+
+
+#messageToUs {
+  padding-left: 35px;
+}
+
+#typeOfAppointmentLine, #bankingTopicLine,
+#existingCustomerLine, #topicOfTalk {
+  margin: 0;
+  padding: 0;
+}
+
+#continue {
+  margin: 0;
+}
+
+i {
+  font-size: medium;
+}
+
+.fa-solid.fa-at {
+  margin-left: -15px;
+  margin-top: -25px;
+  font-size: small;
+  color: #d7bff5;
+}
+
+.fa-solid.fa-envelope {
+  font-size: x-large;
+  color: #730394;
+}
+
+#socialMedia {
+  padding-right: 75px;
+}
+
+.row.headOffice,
+#otherOffices {
+  padding-left: 40px;
+  font-family: 'Questrial', sans-serif;
+  font-size: small;
+  font-weight: 600;
+}
+
+#branchHead {
+  font-size: medium;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#facebookBtn, #twitterBtn, #instagramBtn,
+#youtubeBtn, #linkedInBtn {
+  border-radius: 50%;
+}
+
+.row.socialMedia {
+  margin-bottom: 10px;
+  padding-left: 40px;
+}
+
+#otherOffices {
+  min-height: 350px;
+  max-height: 350px;
+}
+
+#carousel-item {
+  max-height: 60vh;
+}
+
+img {
+  width: 1800px;
+  height: 920px;
+}

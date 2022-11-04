@@ -1,0 +1,11 @@
+<h4 id="typeOfAppmntQ">I want to talk about</h4><hr id="topicOfTalk">
+                        <div class="row justify-content-center" id="pListBtnsRow1">
+                            <button class="btn btn-outline" id="bankingBtn"><i class="fa-solid fa-building-columns"></i><br>Banking</button>
+                            <button class="btn btn-outline" id="investingBtn"><i class="fa-solid fa-money-check-dollar"></i><br>Investing</button>
+                            <button class="btn btn-outline" id="homeFinancingBtn"><i class="fa-sharp fa-solid fa-house"></i><br>Home Financing</button>
+                        </div>
+                        <div class="row justify-content-center" id="pListBtnsRow2">
+                            <button class="btn btn-outline" id="borrowingBtn"><i class="fa-sharp fa-solid fa-sack-dollar"></i><br>Borrowing</button>
+                            <button class="btn btn-outline" id="creditcardBtn"><i class="fa-regular fa-credit-card"></i><br>Credit Cards</button>
+                            <button class="btn btn-outline" id="hideoutBtn">Business</button>
+                        </div>

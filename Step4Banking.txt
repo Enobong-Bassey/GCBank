@@ -1,0 +1,11 @@
+<h4 id="typeOfAppmntQ">Are you an existing GCBank customer?</h4><hr id="existingCustomerLine">                    
+                        <div class="col existingCustomerYes">
+                            <button class="btn btn-block btn-sm mt-3" id="existingCustomerYes">Yes</button>
+                        </div>
+                        <div class="col existingCustomerNo">
+                            <button class="btn btn-block btn-sm mt-3" id="existingCustomerNo">No</button>
+                        </div> 
+                        <br>
+                        <div class="col-12 Continue d-grid">
+                            <button class="btn btn-block btn-sm mb-3" id="continue">Continue</button>
+                        </div>
