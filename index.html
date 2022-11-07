@@ -19,9 +19,11 @@
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>    
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>    
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="https://kit.fontawesome.com/3278087be3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script defer src="angular.js"></script>
     <script defer src="app.js"></script>
     <!-- <script type="text/babel" src="react.js"></script> -->
 
@@ -40,7 +42,55 @@
 <body>
     <!-- home section begins here -->
     <section id="home">
-        <nav class="navbar navbar-expand-sm bg-light justify-content-center fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a href="#home" class="navbar-brand"><span style="color: Orange;">G</span><span style="color: rgb(221, 216, 216);">C</span><span style="color: lightgreen;">Bank</span></a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="#home" class="nav-item nav-link">Home</a>
+                        <a href="#accounts" class="nav-item nav-link">Account</a>
+                        <a href="#services" class="nav-item nav-link">Services</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#home"><span style="color: Orange;">G</span><span style="color: rgb(221, 216, 216);">C</span><span style="color: lightgreen;">Bank</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#accounts">Account</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>    
+                </ul>
+              </div>
+            </div>
+          </nav> -->
+          
+        <!-- <nav class="navbar navbar-expand-sm bg-light justify-content-center fixed-top">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#accounts">Accounts</a></li>
@@ -48,24 +98,25 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </nav> -->
         <div class="container" id="homeContent">
+
+            
             <!-- Carousel -->
             <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
+                <h3 id="above">Great Choice Bank is one of the world's oldest, largest and best-known financial institutions.</h3>
                 <!-- Indicators/dots -->
                 <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
                 </div>
                 
                 <!-- The slideshow/carousel -->
-                <div class="carousel-inner">
+            <div class="carousel-inner" id="carouselContainer">
                 <div class="carousel-item active">
-                    <img src="magnificient.jpg" alt="Los Angeles">
+                    <img src="magnificient.jpg" alt="Los Angeles" class="d-block" style="width:100%">
                     <div class="carousel-caption">
-                    <h3>Los Angeles</h3>
                     <p>We had such a great time in LA!</p>
                     </div>
                 </div>
@@ -81,6 +132,7 @@
                     <div class="carousel-caption">
                     <h3>New York</h3>
                     <p>We love the Big Apple!</p>
+                    </div>
                 </div>  
             </div>
         </div>
@@ -102,9 +154,34 @@
     <section id="accounts">
         <div class="container">
             <h2 class="accountsHeading" style="text-align: center;">My Accounts</h2>
-            <hr>
+            <hr><br>
             <div class="row acctSummary">
-                <div class="col accountSummary"></div>
+                <div class="col-md-4 col-sm-10 accountSummary" id="accountSummary">
+                    <h2 id="personalAcct">My Personal Summary</h2>
+                    <hr id="personalSummary">
+                    <div class="row">
+                        <div class="col left">
+                            <p>Banking:</p>
+                            <p>Credit:</p>
+                            <p>Investments:</p>
+                        </div>
+                        <div class="col right">
+                            <p>($ 580.00)</p>
+                            <p>$ 2,109.23</p>
+                            <p>$ 0.00</p>
+                        </div>
+                    </div>
+                    <hr id="bottomLine">
+                    <div class="row">
+                        <div class="col lowerLeft">
+                            <p><b>Total</b></p>
+                        </div>
+                        <div class="col lowerRight">
+                            <p><b>$ 1,529.23</b></p>
+                        </div>
+                    </div>
+                    <hr id="personalSummary">
+                </div>
             </div>
 
             <!-- account type selection buttons -->
@@ -122,8 +199,291 @@
             <div id="typeOfAccount">
                 <div class="text-center" id="accountType">{{acctTypeTransactLabel}}</div>
             </div>
-            <div class="row acctHistoryDisplay justify-content-center" id="transactionsH">
-                
+            <div class="row acctHistoryDisplay justify-content-center" ng-app="coolApp" ng-controller="coolCtrl" id="transactionsH">
+                <div class="row" id="chequingSectn">
+                    <div class="col-md-6 col-sm-10 creditSection">
+                        <div class="creditHead">
+                            <p id="creditHeadTitle">CREDIT transactions
+                            <input type="search" id="creditSearchChequing" placeholder="Search . . ."></p>
+                        </div>
+                        <div id="creditBody">
+                            <div class="table table-striped table-border table-hover table-sm">
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th>Date</th>
+                                        <th>Details</th>
+                                        <th>Amount</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="listCheqC">
+                                      <tr>
+                                        <td>Oct. 23, 2021</td>
+                                        <td>NSF Return Fee</td>
+                                        <td>$ 450.00</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Sep. 03, 2021</td>
+                                        <td>CANADA PRO</td>
+                                        <td>$ 2100.00</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Sep. 03, 2021</td>
+                                        <td>FIDELITY MSP</td>
+                                        <td>$ 3452.19</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Mary</td>
+                                        <td>Moe</td>
+                                        <td>mary@example.com</td>
+                                      </tr>
+                                      <tr>
+                                        <td>July</td>
+                                        <td>Dooley</td>
+                                        <td>july@example.com</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-10 debitSection">
+                        <div class="debitHead">
+                            <p id="debitHeadTitle">DEBIT transactions
+                            <input type="search" id="debitSearchChequing" placeholder="Search . . ."></p>
+                        </div>
+                        <div id="debitBody">
+                            <div class="table table-striped table-borderless table-hover table-sm">
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th>Date</th>
+                                        <th>Details</th>
+                                        <th>Amount</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="listCheqD">
+                                      <tr>
+                                        <td>Oct. 23, 2021</td>
+                                        <td>NSF Return Fee</td>
+                                        <td>$ 450.00</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Sep. 03, 2021</td>
+                                        <td>CANADA PRO</td>
+                                        <td>$ 2100.00</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Sep. 03, 2021</td>
+                                        <td>FIDELITY MSP</td>
+                                        <td>$ 3452.19</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Mary</td>
+                                        <td>Moe</td>
+                                        <td>mary@example.com</td>
+                                      </tr>
+                                      <tr>
+                                        <td>July</td>
+                                        <td>Dooley</td>
+                                        <td>july@example.com</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="savingsSectn">
+                    <div class="col-md-6 col-sm-10 creditSection">
+                        <div class="creditHead">
+                            <p id="creditHeadTitle">CREDIT transactions
+                            <input type="search" id="creditSearchSaving" placeholder="Search . . ."></p>
+                        </div>
+                        <div id="creditBody">
+                            <div class="table table-striped table-border table-hover table-sm">
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th>Date</th>
+                                        <th>Details</th>
+                                        <th>Amount</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="listSavingC">
+                                      <tr>
+                                        <td>Oct. 23, 2021</td>
+                                        <td>NSF Return Fee</td>
+                                        <td>$ 450.00</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Sep. 03, 2021</td>
+                                        <td>CANADA PRO</td>
+                                        <td>$ 2100.00</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Sep. 03, 2021</td>
+                                        <td>FIDELITY MSP</td>
+                                        <td>$ 3452.19</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Aug. 17, 1986</td>
+                                        <td>Frank Bruno Ventures</td>
+                                        <td>$ 70,000,000.90</td>
+                                      </tr>
+                                      <tr>
+                                        <td>July</td>
+                                        <td>Dooley</td>
+                                        <td>july@example.com</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-10 debitSection">
+                        <div class="debitHead">
+                            <p id="debitHeadTitle">DEBIT transactions
+                            <input type="search" id="debitSearchSaving" placeholder="Search . . ."></p>
+                        </div>
+                        <div id="debitBody">
+                            <div class="table table-striped table-borderless table-hover table-sm">
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th>Date</th>
+                                        <th>Details</th>
+                                        <th>Amount</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="listSavingD">
+                                      <tr>
+                                        <td>Oct. 23, 2021</td>
+                                        <td>NSF Return Fee</td>
+                                        <td>$ 450.00</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Sep. 03, 2021</td>
+                                        <td>CANADA PRO</td>
+                                        <td>$ 2100.00</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Sep. 03, 2021</td>
+                                        <td>FIDELITY MSP</td>
+                                        <td>$ 3452.19</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Jul, 04, 1992</td>
+                                        <td>Rapsberry Couture</td>
+                                        <td>$ 5,200.17</td>
+                                      </tr>
+                                      <tr>
+                                        <td>July</td>
+                                        <td>Dooley</td>
+                                        <td>july@example.com</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="creditcardSectn">
+                    <div class="row" id="CreditCardSectn">
+                        <div class="col-md-6 col-sm-10 creditSection">
+                            <div class="creditHead">
+                                <p id="creditHeadTitle">CREDIT transactions
+                                <input type="search" id="creditSearchCreditCard" placeholder="Search . . ."></p>
+                            </div>
+                            <div id="creditBody">
+                                <div class="table table-striped table-border table-hover table-sm">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th>Date</th>
+                                            <th>Details</th>
+                                            <th>Amount</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody id="listCreditCardC">
+                                          <tr>
+                                            <td>Oct. 23, 2021</td>
+                                            <td>NSF Return Fee</td>
+                                            <td>$ 450.00</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Sep. 03, 2021</td>
+                                            <td>CANADA PRO</td>
+                                            <td>$ 2100.00</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Sep. 03, 2021</td>
+                                            <td>FIDELITY MSP</td>
+                                            <td>$ 3452.19</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Mary</td>
+                                            <td>Moe</td>
+                                            <td>mary@example.com</td>
+                                          </tr>
+                                          <tr>
+                                            <td>July</td>
+                                            <td>Dooley</td>
+                                            <td>july@example.com</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-10 debitSection">
+                            <div class="debitHead">
+                                <p id="debitHeadTitle">DEBIT transactions
+                                <input type="search" id="debitSearchCreditCard" placeholder="Search . . ."></p>
+                            </div>
+                            <div id="debitBody">
+                                <div class="table table-striped table-borderless table-hover table-sm">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th>Date</th>
+                                            <th>Details</th>
+                                            <th>Amount</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody id="listCreditCardD">
+                                          <tr>
+                                            <td>Oct. 23, 2021</td>
+                                            <td>NSF Return Fee</td>
+                                            <td>$ 450.00</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Sep. 03, 2021</td>
+                                            <td>CANADA PRO</td>
+                                            <td>$ 2100.00</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Sep. 03, 2021</td>
+                                            <td>FIDELITY MSP</td>
+                                            <td>$ 3452.19</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Mary</td>
+                                            <td>Moe</td>
+                                            <td>mary@example.com</td>
+                                          </tr>
+                                          <tr>
+                                            <td>July</td>
+                                            <td>Dooley</td>
+                                            <td>july@example.com</td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>        
     </section>
@@ -135,20 +495,20 @@
             <h2 class="servicesHeading" style="text-align: center;">Products and Services</h2>
             <hr>
             <div class="row">
-                <div class="col" id="serviceCards">
+                <div class="col-md-3 col-sm-6" id="serviceCards">
                     <h4 class="serviceHeading">Banking</h4>
                     <hr>
                     <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Bank Accounts</button></a>
                     <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Ways to Bank</button></a>
                     <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Overdraft</button></a>
                 </div>
-                <div class="col" id="serviceCards">
+                <div class="col-md-3 col-sm-6" id="serviceCards">
                     <h4 class="serviceHeading">Borrowing</h4>
                     <hr>
                     <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Mortgage</button></a>
                     <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Loans</button></a>
                 </div>
-                <div class="col" id="serviceCards">
+                <div class="col-md-3 col-sm-6" id="serviceCards">
                     <h4 class="serviceHeading">Credit Cards</h4>
                     <hr>
                     <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Flexible Travel Rewards</button></a>
@@ -159,21 +519,21 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col" id="serviceCards">
+                <div class="col-md-3 col-sm-6" id="serviceCards">
                     <h4 class="serviceHeading">Travels</h4>
                     <hr>
                     <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Cross Border Banking</button></a>
                     <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Travel Medical Insurance</button></a>
                     <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Foreign Earnings</button></a>
                 </div>
-                <div class="col" id="serviceCards">
+                <div class="col-md-3 col-sm-6" id="serviceCards">
                     <h4 class="serviceHeading">Investments</h4>
                     <hr>
                     <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Savings and Investment Products</button></a>
                     <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Invest on your own</button></a>
                     <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Invest with an Advisor</button></a>
                 </div>
-                <div class="col" id="serviceCards">
+                <div class="col-md-3 col-sm-6" id="serviceCards">
                     <h4 class="serviceHeading">Insurance</h4>
                     <hr>
                     <a href="#" class="d-grid"><button class="btn btn-outline-success btn-sm btn-block">Mortgage Protection</button></a>
@@ -193,30 +553,56 @@
             <h2 class="aboutHeading" style="text-align: center;">About us</h2>
             <hr>
             <div class="briefHistory">
-                <h2 id="historyInBrief">Historical Background</h2>
+                <h2 id="historyInBrief">History of our bank</h2>
                 <div class="col-md-12 col-sm-10" id="historyContent">
                     <p>The bank is built on the foundation of more than 1,200 predecessor institutions that have come together through the years to form today's GCBank.</p>
-                    <p>We trace our roots to 1799 in New York City, and our many well-known heritage firms include J.P. Morgan & Co., The Chase Manhattan Bank, Bank One, Manufacturers Hanover Trust Co., Chemical Bank, The First National Bank of Chicago, National Bank of Detroit, The Bear Stearns Companies Inc., Robert Fleming Holdings, Cazenove Group and the business acquired in the Washington Mutual transaction. Each of these firms, in its time, was closely tied to innovations in finance and the growth of the U.S. and global economies.</p>
+                    <p>We trace our roots to 1799 in New York City, and our many well-known heritage firms include Geli Aku & Co., The Abule Mercantile Bank, Bank Infinitum, Manufacturers Cresendo Trust Co., NAP Chemical Bank, The Premier National Bank of Owerri, National Bank of Niamey, The Gorilla Stearns Companies Inc., Robert Indiana Holdings, Cazenove Group and the business acquired in the West Indies Mutual transaction. Each of these firms, in its time, was closely tied to innovations in finance and the growth of the Benin Kingdom and global economies.</p>
                 </div>
             </div>
             <div class="milestones">
-                <h2 id="bankAchievements">Our Milestones</h2>
-                <div class="row">
-                    <div class="col-md-6 col-sm-10" id="milestonesLeft">
-
+                <h2 id="managed">What we offer</h2>
+                    <div class="col-md-12 col-sm-10">
+                        <p>At Great Choice Bank, we are committed to ensuring our policies, products and programs all align to our purpose of making financial lives better for those we serve.</p>
+                        <p>We have done this in part by creating simple, safe, transparent and easy-to-use financial solutions that give people greater control of their finances. When individuals feel financially secure and are able to achieve their financial goals, communities are made stronger.</p>
+                        <p>From small towns to sprawling urban centers and everywhere in between, our customers and their lives are as varied as their locations. They’re in every stage of life, pursuing every type of financial growth—and we help them build the financial future they want. We relate to them as neighbors who know their communities, with the ability to draw on our full capabilities to offer precisely the right solutions.</p>
                     </div>
-                    <div class="col-md-6 col-sm-10" id="milestonesRight">
-
-                    </div>
-                </div>
             </div>
             <div class="management">
                 <div class="row">
-                    <div class="col-md-6 col-sm-10" id="directors">
-                        <h2 id="board">Directors</h2>
+                    <div class="col-md-6 col-sm-10" id="mgmt">
+                        <h2 id="managed">Directors</h2>
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <img src="./images/Christy.jpeg" class="rounded" alt="Josey Sanchez" width="28" height="28">
+                                <p id="mgtName">Annette Sanchez<br>
+                                Chairman</p>
+                            </div>
+                            <div class="col">
+                                <img src="./images/Derby.jpg" class="rounded" alt="Derby George" width="28" height="28">
+                                <p id="mgtName">Derby Martins<br>
+                                    Executive Vice Chairman</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-sm-10" id="management">
-                        <h2 id="management">Management Team</h2>
+                    <div class="col-md-6 col-sm-10" id="mgmt">
+                        <h2 id="managed">Management Team</h2>
+                        <div class="row justify-content-center">
+                            <div class="col text-center">
+                                <img src="./images/Francis.jpg" class="rounded-circle" alt="Frank Jones" width="28" height="28">
+                                <p id="mgtName">Frank Jones<br>
+                                Head, Human Resources</p>
+                            </div>
+                            <div class="col text-center">
+                                <img src="./images/Praise.jpg" class="rounded-circle" alt="Praise Rawlings" width="28" height="28">
+                                <p id="mgtName">Donald Mcgregor<br>
+                                    Head, Financial Operations</p>
+                            </div>
+                            <div class="col text-center">
+                                <img src="./images/Vivek.jpg" class="rounded-circle" alt="Maxwell Jose" width="28" height="28">
+                                <p id="mgtName">Arjun Mujir<br>
+                                    Head, Legal Services</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -231,10 +617,10 @@
             <hr>
             <br>
             <div class="row justify-content-center" id="contactSubSections">
-                <div class="col-4" id="socialMedia">
+                <div class="col-md-4 col-sm-10" id="socialMedia">
                     <h2 class="text-center" id="locations">Bank Locations</h2><br>
                     <div class="row headOffice text-left">
-                        <h5 id="mainTitle">Head Office - Toronto</h5>
+                        <h5 id="branchHead">Head Office - Toronto</h5>
                         <p>1001 Paul Bassinger Avenue,<br>
                         Creek Line, ON, G5H Y3Z,<br>Canada.</p>
                         <p><i class="fa-sharp fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+1 (413) 767 1001<br>
@@ -253,49 +639,193 @@
                         <p><i class="fa-sharp fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+1 (342) 707 1001<br>
                         <i class="fa-solid fa-envelope"></i><i class="fa-solid fa-at"></i>&nbsp;&nbsp;&nbsp;info@gcbank-nb.ca</p>                    
                     </div>
-                    <div class="row socialMedia text-center">
-                        <button class="btn btn-outline" id="facebookBtn"><i class="fa-brands fa-facebook-f"></i></button>
-                        <button class="btn btn-outline" id="twitterBtn"><i class="fa-brands fa-twitter"></i></button>
-                        <button class="btn btn-outline" id="instagramBtn"><i class="fa-brands fa-instagram"></i></button>
-                        <button class="btn btn-outline" id="youtubeBtn"><i class="fa-brands fa-youtube"></i></button>
-                        <button class="btn btn-outline" id="linkedInBtn"><i class="fa-brands fa-linkedin"></i></button>
-                    </div>
                 </div>
-                <div class="col-4 text-center" id="setAppointment">
+                <div class="col-md-4 col-sm-10 text-center" id="setAppointment">
                     <h2 id="appointment">Book an appointment</h2><br>
                     <h4 id="typeOfAppmntQ">What type of appointment will this be?</h4><hr id="typeOfAppointmentLine">
                     <button class="btn btn-outline" id="personalBtn"><i class="fa-solid fa-user"></i><br>Personal</button>
                     <button class="btn btn-outline" id="businessBtn"><i class="fa-solid fa-briefcase"></i><br>Business</button>
                     <div id="personalListBtns">
-                        <h4 id="typeOfAppmntQ">I want to talk about</h4><hr id="topicOfTalk">
-                        <div class="row justify-content-center" id="pListBtnsRow1">
-                            <button class="btn btn-outline" id="bankingBtn"><i class="fa-solid fa-building-columns"></i><br>Banking</button>
-                            <button class="btn btn-outline" id="investingBtn"><i class="fa-solid fa-money-check-dollar"></i><br>Investing</button>
-                            <button class="btn btn-outline" id="homeFinancingBtn"><i class="fa-sharp fa-solid fa-house"></i><br>Home Financing</button>
+                        <div id="personalStep1">
+                            <h4 id="typeOfAppmntQ">I want to talk about</h4><hr id="topicOfTalk">
+                            <div class="row justify-content-center" id="pListBtnsRow1">
+                                <button class="btn btn-outline" id="bankingBtn"><i class="fa-solid fa-building-columns"></i><br>Banking</button>
+                                <button class="btn btn-outline" id="investingBtn"><i class="fa-solid fa-money-check-dollar"></i><br>Investing</button>
+                                <button class="btn btn-outline" id="homeFinancingBtn"><i class="fa-sharp fa-solid fa-house"></i><br>Home Financing</button>
+                            </div>
+                            <div class="row justify-content-center" id="pListBtnsRow2">
+                                <button class="btn btn-outline" id="borrowingBtn"><i class="fa-sharp fa-solid fa-sack-dollar"></i><br>Borrowing</button>
+                                <button class="btn btn-outline" id="creditcardBtn"><i class="fa-regular fa-credit-card"></i><br>Credit Cards</button>
+                                <button class="btn btn-outline" id="hideoutBtn">Business</button>
+                            </div>
                         </div>
-                        <div class="row justify-content-center" id="pListBtnsRow2">
-                            <button class="btn btn-outline" id="borrowingBtn"><i class="fa-sharp fa-solid fa-sack-dollar"></i><br>Borrowing</button>
-                            <button class="btn btn-outline" id="creditcardBtn"><i class="fa-regular fa-credit-card"></i><br>Credit Cards</button>
-                            <button class="btn btn-outline" id="hideoutBtn">Business</button>
+                        <div id="businessStep1">
+                            <h4 id="typeOfAppmntQ">I want to talk about</h4><hr id="topicOfTalk">
+                            <div class="row justify-content-center" id="bListBtnsRow1">
+                                <button class="btn btn-outline" id="bankingBtnBiz"><i class="fa-solid fa-building-columns"></i><br>Banking</button>
+                                <button class="btn btn-outline" id="investingBtnBiz"><i class="fa-solid fa-money-check-dollar"></i><br>Investing</button>
+                                <button class="btn btn-outline" id="creditcardBtnBiz"><i class="fa-regular fa-credit-card"></i><br>Credit Cards</button>
+                            </div>
+                            <div class="row justify-content-center" id="bListBtnsRow2">
+                                <button class="btn btn-outline" id="borrowingBtnBiz"><i class="fa-sharp fa-solid fa-sack-dollar"></i><br>Borrowing</button>
+                            </div>
                         </div>
                     </div>
                     <div id="subAppmntTypeListBtns">
-                        <h4 id="typeOfAppmntQ">Select an investing topic</h4><hr id="bankingTopicLine">
-                        <div class="row text-center" id="pListBtnsRow1">
-                            <div class="col retirement">
-                                <button class="btn btn-block btn-sm mt-3" id="retirement">Plan for my retirement</button>
+                        <div id="pbankingStep2">
+                            <h4 id="typeOfAppmntQ">Select a banking topic</h4><hr id="bankingTopicLine">
+                            <div class="row text-center" id="pListBtnsRow1">
+                                <div class="col retirement">
+                                    <button class="btn btn-block btn-sm mt-3" id="retirement">Open a chequing account</button>
+                                </div>
+                                <div class="col startsaving">
+                                    <button class="btn btn-block btn-sm mt-3" id="startsaving">Open a savings account</button>
+                                </div>                            
                             </div>
-                            <div class="col startsaving">
-                                <button class="btn btn-block btn-sm mt-3" id="startsaving">Start saving</button>
-                            </div>                            
+                            <div class="row text-center" id="pListBtnsRow2">
+                                <div class="col childeduc">
+                                    <button class="btn btn-block btn-sm mb-3" id="childeduc">Open a US dollar account</button>
+                                </div>
+                                <div class="col mutualfunds">
+                                    <button class="btn btn-block btn-sm mb-3" id="mutualfunds">Apply for overdraft protection</button>
+                                </div>                            
+                            </div>
                         </div>
-                        <div class="row text-center" id="pListBtnsRow2">
-                            <div class="col childeduc">
-                                <button class="btn btn-block btn-sm mb-3" id="childeduc">Plan for my child's education</button>
+                        <div id="pinvestingStep2">
+                            <h4 id="typeOfAppmntQ">Select an investing topic</h4><hr id="bankingTopicLine">
+                            <div class="row text-center" id="pListBtnsRow1">
+                                <div class="col retirement">
+                                    <button class="btn btn-block btn-sm mt-3" id="retirement">Plan for my retirement</button>
+                                </div>
+                                <div class="col startsaving">
+                                    <button class="btn btn-block btn-sm mt-3" id="startsaving">Start saving</button>
+                                </div>                            
                             </div>
-                            <div class="col mutualfunds">
-                                <button class="btn btn-block btn-sm mb-3" id="mutualfunds">Learn about mutual funds</button>
-                            </div>                            
+                            <div class="row text-center" id="pListBtnsRow2">
+                                <div class="col childeduc">
+                                    <button class="btn btn-block btn-sm mb-3" id="childeduc">Plan for my child's education</button>
+                                </div>
+                                <div class="col mutualfunds">
+                                    <button class="btn btn-block btn-sm mb-3" id="mutualfunds">Learn about mutual funds</button>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div id="phomefinancingStep2">
+                            <h4 id="typeOfAppmntQ">Select a home financing topic</h4><hr id="bankingTopicLine">
+                            <div class="row text-center" id="pListBtnsRow1">
+                                <div class="col retirement">
+                                    <button class="btn btn-block btn-sm mt-3" id="retirement">Buy a home</button>
+                                </div>
+                                <div class="col startsaving">
+                                    <button class="btn btn-block btn-sm mt-3" id="startsaving">Renew my mortgage</button>
+                                </div>                            
+                            </div>
+                            <div class="row text-center" id="pListBtnsRow2">
+                                <div class="col childeduc">
+                                    <button class="btn btn-block btn-sm mb-3" id="childeduc">Renovate my home</button>
+                                </div>
+                                <div class="col mutualfunds">
+                                    <button class="btn btn-block btn-sm mb-3" id="mutualfunds">Refinance my home</button>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div id="pborrowingStep2">
+                            <h4 id="typeOfAppmntQ">Select a borrowing topic</h4><hr id="bankingTopicLine">
+                            <div class="row text-center" id="pListBtnsRow1">
+                                <div class="col retirement">
+                                    <button class="btn btn-block btn-sm mt-3" id="retirement">Fund my education</button>
+                                </div>
+                                <div class="col startsaving">
+                                    <button class="btn btn-block btn-sm mt-3" id="startsaving">Borrow for a large purchase</button>
+                                </div>                            
+                            </div>
+                            <div class="row text-center" id="pListBtnsRow2">
+                                <div class="col childeduc">
+                                    <button class="btn btn-block btn-sm mb-3" id="childeduc">Consolidate my debts</button>
+                                </div>
+                                <div class="col mutualfunds">
+                                    <button class="btn btn-block btn-sm mb-3" id="mutualfunds">Renovate my home</button>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div id="pcreditcardsStep2">
+                            <h4 id="typeOfAppmntQ">Select a credit card topic</h4><hr id="bankingTopicLine">
+                            <div class="row text-center" id="pListBtnsRow1">
+                                <div class="col retirement">
+                                    <button class="btn btn-block btn-sm mt-3" id="retirement">Apply for a new credit card</button>
+                                </div>
+                                <div class="col startsaving">
+                                    <button class="btn btn-block btn-sm mt-3" id="startsaving">Credit card with cash rewards</button>
+                                </div>                            
+                            </div>
+                            <div class="row text-center" id="pListBtnsRow2">
+                                <div class="col childeduc">
+                                    <button class="btn btn-block btn-sm mb-3" id="childeduc">Credit card with lower rate</button>
+                                </div>
+                                <div class="col mutualfunds">
+                                    <button class="btn btn-block btn-sm mb-3" id="mutualfunds">Credit card with low annual fee</button>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div id="bbankingStep2">
+                            <h4 id="typeOfAppmntQ">Select a banking topic</h4><hr id="bankingTopicLine">
+                            <div class="row text-center" id="pListBtnsRow1">
+                                <div class="col retirement">
+                                    <button class="btn btn-block btn-sm mt-3" id="retirement">Open a business account</button>
+                                </div>
+                                <div class="col startsaving">
+                                    <button class="btn btn-block btn-sm mt-3" id="startsaving">Help with a banking transaction</button>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div id="binvestingStep2">
+                            <h4 id="typeOfAppmntQ">Select an investing topic</h4><hr id="bankingTopicLine">
+                            <div class="row text-center" id="pListBtnsRow1">
+                                <div class="col retirement">
+                                    <button class="btn btn-block btn-sm mt-3" id="retirement">Discuss investment options</button>
+                                </div>
+                                <div class="col startsaving">
+                                    <button class="btn btn-block btn-sm mt-3" id="startsaving">Manage my investment online</button>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div id="bborrowingStep2">
+                            <h4 id="typeOfAppmntQ">Select a borrowing topic</h4><hr id="bankingTopicLine">
+                            <div class="row text-center" id="pListBtnsRow1">
+                                <div class="col retirement">
+                                    <button class="btn btn-block btn-sm mt-3" id="retirement">Help with a loan payment</button>
+                                </div>
+                                <div class="col startsaving">
+                                    <button class="btn btn-block btn-sm mt-3" id="startsaving">Apply for a credit > $50,000</button>
+                                </div>                            
+                            </div>
+                            <div class="row text-center" id="pListBtnsRow2">
+                                <div class="col childeduc">
+                                    <button class="btn btn-block btn-sm mb-3" id="childeduc">Apply for a credit < $50,000</button>
+                                </div>
+                                <div class="col mutualfunds">
+                                    <button class="btn btn-block btn-sm mb-3" id="mutualfunds">Discuss my borrowing options</button>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div id="bcreditcardsStep2">
+                            <h4 id="typeOfAppmntQ">Select a credit card topic</h4><hr id="bankingTopicLine">
+                            <div class="row text-center" id="pListBtnsRow1">
+                                <div class="col retirement">
+                                    <button class="btn btn-block btn-sm mt-3" id="retirement">Apply for a new credit card</button>
+                                </div>
+                                <div class="col startsaving">
+                                    <button class="btn btn-block btn-sm mt-3" id="startsaving">Credit card with travel rewards</button>
+                                </div>                            
+                            </div>
+                            <div class="row text-center" id="pListBtnsRow2">
+                                <div class="col childeduc">
+                                    <button class="btn btn-block btn-sm mb-3" id="childeduc">Review existing credit card</button>
+                                </div>
+                                <div class="col mutualfunds">
+                                    <button class="btn btn-block btn-sm mb-3" id="mutualfunds2"></button>
+                                </div>                            
+                            </div>
                         </div>
                     </div>
                     <div class="row text-center" id="appointmentStep4">
@@ -314,7 +844,7 @@
                         <button class="btn btn-outline" id="investingBtn">Investing</button> -->
                     </div>
                 </div>
-                <div class="col-4 " id="messageToUs">
+                <div class="col-md-4 col-sm-10 justify-content-center" id="messageToUs">
                         <h2 class="text-center" id="dropNote">Drop a message</h2><br>
                         <form class="container needs-validation" novalidate>
                             <div class="form-row">
@@ -339,6 +869,13 @@
                                 </div>
                             </div>
                         </form>
+                        <div class="row socialMedia text-center">
+                            <button class="btn btn-outline" id="facebookBtn"><i class="fa-brands fa-facebook-f"></i></button>
+                            <button class="btn btn-outline" id="twitterBtn"><i class="fa-brands fa-twitter"></i></button>
+                            <button class="btn btn-outline" id="instagramBtn"><i class="fa-brands fa-instagram"></i></button>
+                            <button class="btn btn-outline" id="youtubeBtn"><i class="fa-brands fa-youtube"></i></button>
+                            <button class="btn btn-outline" id="linkedInBtn"><i class="fa-brands fa-linkedin"></i></button>
+                        </div>
                 </div>
             </div>
             
@@ -386,3 +923,16 @@
         </div>
     </div>
 </sectiion> -->
+
+
+
+<!-- <div class="jumbotron" ng-app="coolApp" ng-controller="coolCtrl">
+    <h1 class="display-4">Angular app</h1>
+    <hr>
+    <h4>Search: <input type="text" ng-model="searchName" ></h4>
+    <ul>
+        <li ng-repeat="person in names | filter: searchName">
+            {{ person }}
+        </li>
+    </ul>
+</div> -->

@@ -1,17 +1,17 @@
 <h4 id="typeOfAppmntQ">Select a banking topic</h4><hr id="bankingTopicLine">
-                        <div class="row text-center" id="pListBtnsRow1">
-                            <div class="col openChequing">
-                                <button class="btn btn-block btn-sm mt-3" id="openChequing">Open a chequing account</button>
-                            </div>
-                            <div class="col openSavings">
-                                <button class="btn btn-block btn-sm mt-3" id="openSavings">Open a savings account</button>
-                            </div>                            
-                        </div>
-                        <div class="row text-center" id="pListBtnsRow2">
-                            <div class="col openUSdollar">
-                                <button class="btn btn-block btn-sm mb-3" id="openUSdollar">Open a U.S. dollar account</button>
-                            </div>
-                            <div class="col applyOverdraftP">
-                                <button class="btn btn-block btn-sm mb-3" id="applyOverdraftP">Get Overdraft Protection</button>
-                            </div>                            
-                        </div>
+<div class="row text-center" id="pListBtnsRow1">
+    <div class="col openChequing">
+        <button class="btn btn-block btn-sm mt-3" id="openChequing">Open a chequing account</button>
+    </div>
+    <div class="col openSavings">
+        <button class="btn btn-block btn-sm mt-3" id="openSavings">Open a savings account</button>
+    </div>                            
+</div>
+<div class="row text-center" id="pListBtnsRow2">
+    <div class="col openUSdollar">
+        <button class="btn btn-block btn-sm mb-3" id="openUSdollar">Open a U.S. dollar account</button>
+    </div>
+    <div class="col applyOverdraftP">
+        <button class="btn btn-block btn-sm mb-3" id="applyOverdraftP">Get Overdraft Protection</button>
+    </div>                            
+</div>

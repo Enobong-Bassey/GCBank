@@ -30,9 +30,9 @@
                                     <td>$ 3452.19</td>
                                   </tr>
                                   <tr>
-                                    <td>Aug. 17, 1986</td>
-                                    <td>Frank Bruno Ventures</td>
-                                    <td>$ 70,000,000.90</td>
+                                    <td>Mary</td>
+                                    <td>Moe</td>
+                                    <td>mary@example.com</td>
                                   </tr>
                                   <tr>
                                     <td>July</td>
@@ -44,6 +44,8 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col-md-6 col-sm-10 debitSection">
                     <div class="debitHead">
                         <p id="debitHeadTitle">DEBIT transactions
@@ -76,9 +78,9 @@
                                     <td>$ 3452.19</td>
                                   </tr>
                                   <tr>
-                                    <td>Jul, 04, 1992</td>
-                                    <td>Rapsberry Couture</td>
-                                    <td>$ 5,200.17</td>
+                                    <td>Mary</td>
+                                    <td>Moe</td>
+                                    <td>mary@example.com</td>
                                   </tr>
                                   <tr>
                                     <td>July</td>

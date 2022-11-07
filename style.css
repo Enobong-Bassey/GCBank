@@ -1,6 +1,5 @@
 nav {
-    background-color: #f1f3fb;
-    opacity: 50%;
+    opacity: 100%;
     max-height: 8vh;
     border-bottom: 4px solid black;
 }
@@ -28,12 +27,18 @@ nav ul li a:hover {
     color: black;
 }
 
+#carouselContainer {
+  top: 80px;
+  height: 70vh;
+}
+
 #creditcardsBtn, #savingsBtn, #chequingBtn {
     background-color: #5867e8;
     border-radius: 0;
     color: white;
     font-family: 'Questrial', sans-serif;
     font-size: small;
+    margin-bottom: 5px;
 }
 
 #creditcardsBtn:hover, #savingsBtn:hover, #chequingBtn:hover {
@@ -60,7 +65,9 @@ nav ul li a:hover {
     background-color: #ccffcc;
     border-radius: 22px;
     min-height: 32vh;
-    margin: 30px;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 15px;
 }
 
@@ -217,7 +224,11 @@ a button.btn.btn-outline-success.btn-sm.btn-block {
 }
 
 .creditHead #creditSearchChequing,
-.debitHead #debitSearchChequing {
+.debitHead #debitSearchChequing,
+.creditHead #creditSearchSaving,
+.debitHead #debitSearchSaving,
+.creditHead #creditSearchCreditCard,
+.debitHead #debitSearchCreditCard {
     font-family: 'Questrial', sans-serif;
     font-size: 12px;
     color: #777;
@@ -276,8 +287,15 @@ div .col-5.debitSection .table-responsive .table {
   }
 
   #historyInBrief, #bankAchievements,
-  #board, #management {
+  #board, #managed {
     color: #643a1b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  #personalAcct {
+    color: #3a49da;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: bold;
@@ -288,12 +306,21 @@ div .col-5.debitSection .table-responsive .table {
     min-height: 15vh;
   }
 
+  #above {
+    top: 200;
+    position: relative;
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+  }
+
   #board {
     margin-right: 0;
   }
 
   #management {
     margin-left: 0;
+    margin-bottom: 2px;
+    padding-bottom: 0;
   }
 
   #dropmsg_name_lbl,
@@ -336,7 +363,9 @@ div .col-5.debitSection .table-responsive .table {
   }
 
   #bankingBtn, #investingBtn, #homeFinancingBtn,
-  #borrowingBtn, #creditcardBtn {
+  #borrowingBtn, #creditcardBtn,
+  #bankingBtnBiz, #investingBtnBiz,
+  #borrowingBtnBiz, #creditcardBtnBiz {
     font-family: 'Questrial', sans-serif;
     font-size: small;
     border: 1px solid #3e1d60;
@@ -383,7 +412,9 @@ div .col-5.debitSection .table-responsive .table {
   }
 
   #bankingBtn:hover, #investingBtn:hover, #homeFinancingBtn:hover,
-  #borrowingBtn:hover, #creditcardBtn:hover {
+  #borrowingBtn:hover, #creditcardBtn:hover,
+  #bankingBtnBiz:hover, #investingBtnBiz:hover,
+  #borrowingBtnBiz:hover, #creditcardBtnBiz:hover {
     background-color: #3e1d60;
     color: white;
     font-weight: 500;
@@ -490,7 +521,6 @@ button#existingCustomerNo.btn.btn-block.btn-sm {
 }
 
 
-
 #messageToUs {
   padding-left: 35px;
 }
@@ -533,6 +563,17 @@ i {
   font-weight: 600;
 }
 
+#mgtName {
+  font-family: 'Questrial', sans-serif;
+  font-size: medium;
+  font-weight: 600;
+}
+
+p #mgtName {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 #branchHead {
   font-size: medium;
   margin-bottom: 0;
@@ -561,4 +602,39 @@ i {
 img {
   width: 1800px;
   height: 920px;
+}
+
+.col.left,
+.col.lowerLeft {
+  padding-right: 25px;
+  text-align: right;
+  font-family: 'Questrial', sans-serif;
+  font-weight: bolder;
+  font-size: 13px;
+  color: darkblue;
+}
+
+.col.right,
+.col.lowerRight {
+  padding-right: 55px;
+  text-align: right;
+  font-family: 'Questrial', sans-serif;
+  font-weight: bolder;
+  font-size: 13px;
+  color: darkblue;
+}
+
+#bottomLine {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+img.rounded-circle {
+  width: 120px;
+  height: 120px;
+}
+
+img.rounded {
+  width: 120px;
+  height: 120px;
 }
